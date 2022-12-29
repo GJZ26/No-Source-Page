@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: system-ui;
+    background-color: rgb(0, 0, 0);
+}
+body::after{
+    font-size: 28px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: ";)";
+    animation: chaging 5s linear;
+}
+@keyframes chaging {
+    0%{
+        background-color: white;
+        color: black;
+        content: "Hola mundo!";
+    }
+    100%{
+        background-color: black;
+        color: white;
+        content: "Chulada de página no?";
+    }
+}
